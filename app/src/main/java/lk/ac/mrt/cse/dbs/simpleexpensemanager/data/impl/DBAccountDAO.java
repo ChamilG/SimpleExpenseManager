@@ -15,7 +15,6 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.database.DBHandler;
 
 
 public class DBAccountDAO implements AccountDAO {
-    private static final String DB_NAME = "Expense_manage.db";
     private static final String TABLE_NAME = "accounts";
     private static final String TABLE_NAME2 = "Transactions";
     private static final String ACCOUNT_NO_COL = "account_no";
