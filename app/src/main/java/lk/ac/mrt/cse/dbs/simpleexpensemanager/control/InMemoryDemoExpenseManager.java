@@ -22,9 +22,11 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.InMemoryAccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.InMemoryTransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 
+
 /**
  *
  */
+
 public class InMemoryDemoExpenseManager extends ExpenseManager {
 
     public InMemoryDemoExpenseManager() {
@@ -38,8 +40,8 @@ public class InMemoryDemoExpenseManager extends ExpenseManager {
         TransactionDAO inMemoryTransactionDAO = new InMemoryTransactionDAO();
         setTransactionsDAO(inMemoryTransactionDAO);
 
-        AccountDAO inMemoryAccountDAO = new InMemoryAccountDAO();
-        setAccountsDAO(inMemoryAccountDAO);
+        AccountDAO dbAccountDAO = new InMemoryAccountDAO();
+        setAccountsDAO(dbAccountDAO);
 
         // dummy data
         Account dummyAcct1 = new Account("12345A", "Yoda Bank", "Anakin Skywalker", 10000.0);
