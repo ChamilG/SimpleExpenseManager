@@ -32,7 +32,7 @@ public class DBHandler extends SQLiteOpenHelper{
     private final List<Transaction> transactionsArrayList = new ArrayList<>();
 
     public DBHandler( Context context) {
-        super(context, DB_NAME, null, 5);
+        super(context, DB_NAME, null, 2);
 
     }
 

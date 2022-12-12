@@ -115,7 +115,6 @@ public class DBAccountDAO implements AccountDAO {
                     break;
             }
 
-        //SQLiteDatabase db2 = dbHandler.readableDatabase();
         ContentValues values = new ContentValues();
         values.put(INITIAL_BALANCE, balance);
         db1.update(TABLE_NAME, values, "account_no=?", new String[]{accountNo});
